@@ -1,20 +1,13 @@
 "use client";
 import Link from "next/link";
 import { useState } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Phone } from "lucide-react";
+import { Link as ScrollLink } from "react-scroll";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
-  const navLinks = [
-    { name: "Home", href: "/" },
-    { name: "About Us", href: "/about" },
-    { name: "Services", href: "/services" },
-    { name: "Industries", href: "/industries" },
-    { name: "Resources", href: "/resources" },
-    { name: "Testimonials", href: "/testimonials" },
-    { name: "Contact", href: "/contact" },
-  ];
+  const pinSections = ['Home', 'About Us', 'Services', 'Industries', 'Join Us', 'FAQs'];
 
   return (
     <nav className="w-full bg-white shadow-md fixed top-0 left-0 z-50">
@@ -27,24 +20,28 @@ export default function Navbar() {
           </Link>
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex space-x-6">
-            {navLinks.map((link) => (
-              <Link
-                key={link.name}
-                href={link.href}
+          <ul className="hidden md:flex space-x-6 items-center cursor-pointer">
+            {pinSections.map((section) => (
+              <li key={section}>
+                <ScrollLink
+                to={section}
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={500}
                 className="relative text-gray-700 hover:text-red-900 transition after:content-[''] after:absolute after:w-0 after:h-[1.2px] after:bg-red-900 after:left-0 after:-bottom-1 after:transition-all after:duration-300 hover:after:w-full"
                 >
-                {link.name}
-                </Link>
-
+                {section}
+                </ScrollLink>
+              </li>
             ))}
             <Link
               href="/contact"
-              className="ml-4 px-4 py-2 bg-red-900 text-white rounded-lg hover:bg-red-700 transition"
+              className="ml-4 px-4 py-2 flex gap-2 bg-red-900 text-white rounded-lg hover:bg-red-700 transition"
             >
-              Book Consultation
+             <Phone size={20}/> Book Consultation
             </Link>
-          </div>
+          </ul>
 
           {/* Mobile Menu Button */}
           <button

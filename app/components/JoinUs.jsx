@@ -12,13 +12,15 @@ const merry = Merriweather({
 
 export default function JoinUs() {
   return (
-    <section className="relative bg-gradient-to-br from-red-900/80 via-red-700/80 to-red-500/70 text-white py-16 px-4 md:px-12">
+    <section 
+    id="Join Us"
+    className="relative bg-gradient-to-br from-red-900/80 via-red-700/80 to-red-500/70 text-white py-16 px-4 md:px-12">
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
         
         {/* Left: Intro */}
         <div className="space-y-6">
           <motion.h2 
-          initial={{y: -100, opacity: 0}}
+          initial={{y: -50, opacity: 0}}
           whileInView={{ y: 0, opacity: 1}}
           transition={{ duration: 1.0 }}
           className={` ${merry.className} text-3xl md:text-4xl font-bold `}>
@@ -40,7 +42,11 @@ export default function JoinUs() {
         </div>
 
         {/* Right: Benefits Grid */}
-        <div className="grid grid-cols-2 gap-3 md:gap-6">
+        <motion.div 
+        initial={{ x: 50, opacity: 0}}
+        whileInView={{ x: 0, opacity: 1}}
+        transition={{ duration: 1.0 }}
+        className="grid grid-cols-2 gap-3 md:gap-6">
           <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-4 flex flex-col items-start gap-3 hover:shadow-md">
             <FileCheck2 size={28} className="text-white"/>
             <h3 className="font-semibold">Gov’t-Endorsed</h3>
@@ -72,7 +78,7 @@ export default function JoinUs() {
               Hands-on, career-focused debt recovery skills.
             </p>
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import { Merriweather } from "next/font/google";
 import { faqs } from '@/public/assets';
-import { ChevronDown, ChevronUp } from "lucide-react";
+import { ChevronDown, ChevronUp, HelpCircle } from "lucide-react";
 import { motion } from 'framer-motion';
 
 
@@ -17,7 +17,7 @@ export default function Frequent() {
 
   return (
     <section
-      id="frequent"
+      id="FAQs"
       className="bg-white relative w-full min-h-screen flex items-center justify-center"
     >
       <div className="grid grid-cols-1 md:grid-cols-2 p-6 gap-10 w-full max-w-6xl">
@@ -28,7 +28,7 @@ export default function Frequent() {
           whileInView={{ opacity: 1, y: 0}}
           transition={{ duration: 1.2 }}
           className={` ${merry.className} text2xl md:text-3xl font-bold text-black tracking-wide`}>
-            Frequently Asked Questions
+          <HelpCircle size={30}/>  Frequently Asked Questions 
           </motion.h1>
 
           <div className="bg-gray-100 space-y-4 p-4 rounded-lg">

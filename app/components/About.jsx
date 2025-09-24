@@ -1,5 +1,5 @@
 "use client";
-import { Crosshair, Award, Lock, Shield, User } from "lucide-react";
+import { Award, Lock, Shield, User, Building } from "lucide-react";
 import React from "react";
 import Image from "next/image";
 import { motion } from 'framer-motion';
@@ -24,24 +24,25 @@ export default function About() {
     const MotionImage = motion(Image);
 
   return (
-    <section id="about"
+    <section id="About Us"
         className="relative w-full py-10 px-2 bg-white flex items-center justify-center overflow-hidden">
 
         <div className="w-full flex flex-col justify-evenly md:gap-4">
             {/*About Us Text*/}
-            <div className="flex flex-col items-center gap-3">
-                <Crosshair className="text-red-700" size={40}/>
-                <motion.h1
-                initial={{ y: -100, opacity: 0}}
+            <motion.div                
+                initial={{ y: -60, opacity: 0}}
                 whileInView={{ opacity: 1, y: 0}}
                 transition={{ duration: 1.2 }}
+                className="flex flex-col items-center gap-3">
+                <Building className="text-red-700" size={40}/>
+                <h1
                 className={` ${merry.className} text-2xl md:text-3xl`}>
                     ABOUT US
-                </motion.h1>
+                </h1>
 
                 <p className="max-w-xl md:max-w-3xl text-center text-gray-700 text-sm mb-6">We provide specialized services across debt recovery, business consultancy, 
                     and private investigation with unmatched expertise and discretion.</p>
-            </div>
+            </motion.div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 p-0 md:p-6">
                 {/*About Us Section*/}
@@ -158,7 +159,11 @@ export default function About() {
                         </div>
                     </div>
 
-                    <div className="flex items-center justify-between gap-2">
+                    <motion.div 
+                    initial={{x: 60, opacity: 0}}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.8 }} 
+                    className="flex items-center justify-between gap-2">
                         <div className="border border-gray-400 p-4 md:p-8 px-6 md:px-12 items-center justify-center rounded-lg shadow shadow-gray-300">
                             <h3 className={` ${merry.className} text-lg md:text-xl text-red-600 text-center` }>Confidential</h3>
                             <p className="text-gray-600 text-xs text-center">All communications protected</p>
@@ -168,7 +173,7 @@ export default function About() {
                             <h3 className={` ${merry.className} text-lg md:text-xl text-red-600 text-center` }>Results</h3>
                             <p className="text-gray-600 text-xs text-center">Success-driven approach</p>
                         </div>
-                    </div>
+                    </motion.div>
                 </div>
             </div>
         </div>

@@ -12,7 +12,7 @@ const merry = Merriweather({
 
 export default function Industry() {
   return (
-    <section id="industries"
+    <section id="Industries"
       className="bg-white relative w-full py-10 flex items-center justify-center">
     
         <div className="max-w-7xl mx-auto p-6 gap-8 items-center">

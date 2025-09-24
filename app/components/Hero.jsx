@@ -13,7 +13,8 @@ const merry = Merriweather({
 
 export default function Hero() {
   return (
-    <section className="relative w-full min-h-screen py-20 bg-no-repeat bg-cover flex items-center justify-center overflow-hidden"
+    <section id="Home"
+    className="relative w-full min-h-screen py-20 bg-no-repeat bg-cover flex items-center justify-center overflow-hidden"
     style={{ backgroundImage: "url('/office.jpg')" }}>
 
       {/* Dark overlay */}
@@ -26,10 +27,14 @@ export default function Hero() {
           <h1 className={` ${merry.className} text-4xl md:text-6xl font-bold text-red-600 leading-tight `}>
             Trusted Experts in Debt Management & Commercial Investigations
           </h1>
-          <p className="text-[0.9rem] md:text-md text-gray-100">
+          <motion.p 
+          initial={{x: -60, opacity: 0}}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8 }} 
+          className="text-[0.9rem] md:text-md text-gray-100">
             Providing reliable solutions in Debt Management, Private Investigations, 
             Credit Verification, and Alternative Dispute Resolution.
-          </p>
+          </motion.p>
 
           <div className="flex gap-4 md:flex-row flex-col">
             <button className="bg-red-900 hover:bg-red-700 text-white px-6 py-3 rounded-lg text-sm flex items-center justify-center gap-2">
