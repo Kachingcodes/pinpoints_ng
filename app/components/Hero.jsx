@@ -31,7 +31,7 @@ export default function Hero() {
           initial={{x: -60, opacity: 0}}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }} 
-          className="text-[0.9rem] md:text-md text-gray-100">
+          className="text-md text-gray-100">
             Providing reliable solutions in Debt Management, Private Investigations, 
             Credit Verification, and Alternative Dispute Resolution.
           </motion.p>
