@@ -46,7 +46,7 @@ export default function About() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 p-0 md:p-6">
                 {/*About Us Section*/}
-                <div className="relative max-w-3xl mx-auto py-4 px-2">
+                <div className="relative max-w-3xl mx-auto py-4 mt-6 px-2">
                     <motion.h1                
                     initial="hidden"
                     whileInView="visible"
@@ -105,8 +105,8 @@ export default function About() {
                                         <Shield size={20} />
                                     </div>
                                     <div className="space-y-1">
-                                        <h3 className="text-lg md:text-lg font-semibold text-white">Trust & Integrity</h3>
-                                        <span className="text-md md:text-md text-gray-200">
+                                        <h3 className="text-lg md:text-xl font-semibold text-white">Trust & Integrity</h3>
+                                        <span className="text-md text-gray-200">
                                             Fully licensed investigators and consultants with proper certifications 
                                             and insurance coverage.
                                         </span>
@@ -115,11 +115,11 @@ export default function About() {
 
                                 <div className="flex gap-4">
                                     <div className="text-white">
-                                        <Award size={20} />
+                                        <Award size={20}/>
                                     </div>
                                     <div className="space-y-1">
-                                        <h3 className="font-semibold text-white">Proven Track Record</h3>
-                                        <span className="text-sm text-gray-200">
+                                        <h3 className="text-lg md:text-xl font-semibold text-white">Proven Track Record</h3>
+                                        <span className="text-md text-gray-200">
                                             Fully licensed investigators and consultants with proper certifications 
                                             and insurance coverage.
                                         </span>
@@ -128,11 +128,11 @@ export default function About() {
 
                                 <div className="flex gap-4">
                                     <div className="text-white">
-                                        <Lock size={20} />
+                                        <Lock size={20}/>
                                     </div>
                                     <div className="space-y-1">
-                                        <h3 className="font-semibold text-white">Confidential & Discreet Services</h3>
-                                        <span className="text-sm text-gray-200">
+                                        <h3 className="text-lg md:text-xl font-semibold text-white">Confidential & Discreet Services</h3>
+                                        <span className="text-md text-gray-200">
                                             Fully licensed investigators and consultants with proper certifications 
                                             and insurance coverage.
                                         </span>
@@ -141,18 +141,18 @@ export default function About() {
 
                                 <div className="flex gap-4">
                                     <div className="text-white">
-                                        <User size={20} />
+                                        <User size={20}/>
                                     </div>
                                         <div className="space-y-1">
-                                            <h3 className="font-semibold text-white">Client-Centered Approach</h3>
-                                            <span className="text-sm text-gray-200">
+                                            <h3 className="text-lg md:text-xl font-semibold text-white">Client-Centered Approach</h3>
+                                            <span className="text-md text-gray-200">
                                                 Fully licensed investigators and consultants with proper certifications 
                                                 and insurance coverage.
                                             </span>
                                         </div>
                                 </div>
 
-                                <button className="text-red hover:bg-gray-200 py-3 rounded-lg bg-white w-full text-sm transition">
+                                <button className="text-red hover:bg-gray-200 py-3 rounded-lg bg-white w-full text-md transition">
                                     Schedule A Consultation
                                 </button>
                             </div>
@@ -171,7 +171,7 @@ export default function About() {
 
                         <div className="border border-gray-400 p-4 md:p-8 px-6 md:px-12 items-center justify-center rounded-lg shadow shadow-gray-300">
                             <h3 className={` ${merry.className} text-lg md:text-xl text-red-600 text-center` }>Results</h3>
-                            <p className="text-gray-600 text-sm text-center">Success-driven approach</p>
+                            <p className="text-gray-700 text-sm text-center">Success-driven approach</p>
                         </div>
                     </motion.div>
                 </div>
