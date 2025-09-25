@@ -74,14 +74,44 @@ export const sectors = [
 ];
 
 export const faqs = [
-  { q: "What is a car?", a: "A car is a wheeled motor vehicle used for transportation." },
-  { q: "How long is delivery?", a: "Delivery usually takes between 3–5 business days." },
-  { q: "Do you offer warranty?", a: "Yes, all our products come with at least 1 year warranty." },
-  { q: "Can I track my order?", a: "Absolutely, tracking info is shared once your order is shipped." },
-  { q: "Do you ship internationally?", a: "Yes, we ship worldwide with additional costs." },
-  { q: "Can I return a product?", a: "Yes, products can be returned within 14 days." },
-  { q: "What payment methods are accepted?", a: "We accept credit cards, PayPal, and bank transfers." },
-  { q: "Is there customer support?", a: "Yes, our support team is available 24/7." },
-  { q: "Do you offer bulk discounts?", a: "Yes, discounts are available for bulk orders." },
-  { q: "Are my details safe?", a: "We ensure all transactions are encrypted and secure." },
+  {
+    q: "I lent money, but the debtor is avoiding me. What can I do?",
+    a: "You can begin with formal reminders, and if that fails, we can step in to negotiate or use legal means to recover your money."
+  },
+  {
+    q: "Will debt recovery ruin my relationship with the debtor?",
+    a: "Not necessarily. We often use peaceful approaches like negotiation or mediation to maintain relationships while securing repayment."
+  },
+  {
+    q: "What if the debtor has no money to pay now?",
+    a: "We can help arrange structured repayment plans so you can still recover your funds over time."
+  },
+  {
+    q: "How do I know if a company or person I want to deal with is genuine?",
+    a: "We run background checks, verify financial records, and confirm credibility before you engage with them."
+  },
+  {
+    q: "Can you help me trace someone who owes me but has disappeared?",
+    a: "Yes. We conduct discreet investigations to locate debtors and verify their current status."
+  },
+  {
+    q: "Do I have to go to court to resolve a business dispute?",
+    a: "No. Many disputes can be settled faster and cheaper through mediation or arbitration instead of court."
+  },
+  {
+    q: "Will ADR decisions be respected?",
+    a: "Yes. Settlements and arbitration awards can be legally enforced in Nigeria."
+  },
+  {
+    q: "Before giving a loan, how can I confirm if someone can repay?",
+    a: "We check their credit history, financial capacity, and background to help you make safe decisions."
+  },
+  {
+    q: "Can you verify a company’s claims before I invest?",
+    a: "Absolutely. We verify documents, financial standing, and compliance to protect your investment."
+  },
+  {
+    q: "Is my information safe when I request a credit search?",
+    a: "Yes. All searches are confidential and handled according to data protection standards."
+  }
 ];
