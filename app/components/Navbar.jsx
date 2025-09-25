@@ -40,8 +40,8 @@ export default function Navbar() {
                 to={section}
                 spy={true}
                 smooth={true}
-                offset={-100}
-                duration={500}
+                offset={-60}
+                duration={600}
                 className="relative text-gray-700 hover:text-red-900 transition after:content-[''] after:absolute after:w-0 after:h-[1.2px] after:bg-red-900 after:left-0 after:-bottom-1 after:transition-all after:duration-300 hover:after:w-full"
                 >
                 {section}
@@ -50,9 +50,9 @@ export default function Navbar() {
             ))}
             <Link
               href="/contact"
-              className="text-sm ml-4 px-4 py-2 flex gap-2 bg-red-900 text-white rounded-lg hover:bg-red-700 transition"
+              className="text-sm ml-4 px-4 py-2 flex gap-2 bg-red-700 hover:bg-[#f71818] text-white rounded-lg transition"
             >
-             <Phone size={20}/> Book Consultation
+             <Phone size={20}/> Speak to an Expert
             </Link>
           </ul>
 

@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { Shield, Users, FileText, Phone, Book } from "lucide-react";
+import { Shield, Users, FileText, Book, Calendar, ArrowRight, Layers } from "lucide-react";
 import { Merriweather } from "next/font/google";
 import { motion } from 'framer-motion';
 import { stats } from '@/public/assets';
@@ -15,9 +15,9 @@ const merry = Merriweather({
 export default function Hero() {
 
   const learnMoreScroll = () => {
-  const element = document.getElementById("About Us");
+  const element = document.getElementById("Services");
   if (element) {
-    const navbarHeight = 30;
+    const navbarHeight = 10;
     const elementPosition = element.getBoundingClientRect().top + window.scrollY;
     const offsetPosition = elementPosition - navbarHeight;
 
@@ -54,11 +54,11 @@ export default function Hero() {
 
           <div className="flex gap-4 md:flex-row flex-col">
             <button className="bg-red-700 hover:bg-[#f71818] text-white px-6 py-3 rounded-lg text-sm flex items-center justify-center gap-2">
-             <Phone size={20}/> Book Consultation
+             <Calendar size={20}/> Book Consultation
             </button>
             <button onClick={learnMoreScroll}
             variant="outline" className="border border-red-700 text-white px-6 py-3 rounded-lg text-sm flex items-center justify-center gap-2">
-             <Book size={20}/> Learn More
+             <Layers size={20}/> Explore Services
             </button>
           </div>
 

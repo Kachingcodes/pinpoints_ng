@@ -43,17 +43,17 @@ export default function Services() {
                 <ListServices/>
                 </div>
 
-                <div className="relative w-72 h-72 md:w-100 md:h-120 hidden md:flex items-center justify-center">
+                <div className="relative w-120 h-[60rem] hidden md:flex items-center justify-center">
                 <MotionImage
                     initial={{ opacity: 0, x: 50 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ duration: 1.2 }}
-                    src={assets.handshake}
+                    src={assets.handshake2}
                     alt="handshake"
-                    fill
-                    className="object-contain z-10"
+                    className="object-cover z-10"
                 />
-                </div> 
+                </div>
+
             </div>
 
             <div className="relative bg-gradient-to-br from-red-900/80 via-red-700/80 to-red-500/70 flex justify-center rounded-lg">

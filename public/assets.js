@@ -1,10 +1,10 @@
-import handshake from './handshake.jpg';
+import handshake2 from './handshake2.jpg';
 import { Building, CheckCircle, Eye, Flashlight, FlashlightIcon, HandCoins, Handshake, Search, Truck } from "lucide-react";
 import { Landmark, Fuel, Utensils, School, Hotel, Hospital, User } from "lucide-react";
 
 
 export const assets = {
-    handshake
+    handshake2
 };
 
 
