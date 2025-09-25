@@ -23,7 +23,7 @@ export default function Industry() {
                     Doesn't Matter The Industry
                 </h1>
       
-                <div className="flex flex-wrap justify-center text-center gap-6 text-sm text-gray-700 py-12 px-3 md:px-6">
+                <div className="flex flex-wrap justify-center text-center gap-6 text-sm text-gray-700 py-12 md:px-6">
                   {sectors.map((item, i) => (
                     <motion.span
                       key={i}

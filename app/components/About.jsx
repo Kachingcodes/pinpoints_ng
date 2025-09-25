@@ -16,7 +16,7 @@ const aboutVariants = {
   visible: (i) => ({
     opacity: 1,
     x: 0,
-    transition: { delay: i * 0.2, duration: 0.6, ease: "easeOut" },
+    transition: { delay: i * 0.2, duration: 0.8, ease: "easeOut" },
   }),
 };
 
@@ -94,7 +94,11 @@ export default function About() {
                 {/*Why Choose Us Section*/}
                 <div className="flex flex-col gap-4 md:gap-6">
                     <div className="relative bg-gradient-to-r from-[#8f1616] via-[#851313] to-[#ba1717] flex justify-center p-2 rounded-lg">
-                        <div className="bg-white/10 backdrop-blur-lg border border-white/30 rounded-lg shadow-lg p-4 md:p-8 space-y-6 max-w-xl w-full">
+                        <motion.div 
+                        initial={{ opacity: 0, scale: 0 }}
+                        whileInView={{ opacity: 1, scale: 1 }}
+                        transition={{ duration: 0.8, ease: "easeInOut" }}
+                        className="bg-white/10 backdrop-blur-lg border border-white/30 rounded-lg shadow-lg p-4 md:p-8 space-y-6 max-w-xl w-full">
                             <h1 className={`${merry.className} text-xl md:text-2xl font-bold text-white`}>
                             WHY CHOOSE US?
                             </h1>
@@ -156,7 +160,7 @@ export default function About() {
                                     Schedule A Consultation
                                 </button>
                             </div>
-                        </div>
+                        </motion.div>
                     </div>
 
                     <motion.div 

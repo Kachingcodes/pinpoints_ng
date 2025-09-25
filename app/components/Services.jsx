@@ -45,9 +45,9 @@ export default function Services() {
 
                 <div className="relative w-120 h-[60rem] hidden md:flex items-center justify-center">
                 <MotionImage
-                    initial={{ opacity: 0, x: 50 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    transition={{ duration: 1.2 }}
+                    initial={{ opacity: 0, scale: 0 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    transition={{ duration: 0.8, ease: "easeInOut" }}
                     src={assets.handshake2}
                     alt="handshake"
                     className="object-cover z-10"
@@ -60,7 +60,7 @@ export default function Services() {
                 <motion.div 
                 initial={{ y: 90, opacity: 0 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.9 }} 
+                transition={{ duration: 0.8 }} 
                 className="grid grid-cols-1 md:grid-cols-3 gap-12 p-4">
                     <div
                     className="flex flex-col p-4 items-center justify-center gap-2 bg-white/10 backdrop-blur-lg border border-white/30 rounded-lg shadow-lg hover:shadow-md hover:shadow-black/40 transition duration-300 ease-in-out">

@@ -20,20 +20,25 @@ export default function JoinUs() {
         {/* Left */}
         <div className="space-y-6">
           <motion.h2 
-          initial={{y: -50, opacity: 0}}
-          whileInView={{ y: 0, opacity: 1}}
-          transition={{ duration: 1.0 }}
+          initial={{x: -50, opacity: 0}}
+          whileInView={{ x: 0, opacity: 1}}
+          transition={{ duration: 0.8 }}
           className={` ${merry.className} text-2xl md:text-3xl font-bold `}>
             Become a Certified Debt Recovery Specialist
           </motion.h2>
-          <p className="text-md font-medium text-gray-100">
+
+          <motion.p 
+          initial={{x: -50, opacity: 0}}
+          whileInView={{ x: 0, opacity: 1}}
+          transition={{ duration: 1.0 }}
+          className="text-md font-medium text-gray-100">
             Unlock a rewarding career in debt recovery. Our program is open to 
             everyone - no special background required, only the ability to read 
             and write with ease. With certificates endorsed by the{" "}
             <span className="font-semibold">Ministry of Education</span> and the{" "}
             <span className="font-semibold">Ministry of Justice</span>, you gain
             the credibility to succeed.
-          </p>
+          </motion.p>
 
           <button className="mt-4 bg-white text-red-800 font-semibold py-3 px-6 rounded-lg shadow-md hover:bg-gray-100 transition">
             Register Today →
