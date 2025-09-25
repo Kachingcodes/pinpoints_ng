@@ -14,7 +14,7 @@ export default function JoinUs() {
   return (
     <section 
     id="Join Us"
-    className="relative bg-gradient-to-br from-red-900/80 via-red-700/80 to-red-500/70 text-white py-16 px-4 md:px-12">
+    className="relative bg-gradient-to-br from-red-900/80 via-red-700/80 to-red-500/70 text-white py-16 px-4 md:px-12 overflow-hidden">
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
         
         {/* Left: Intro */}
@@ -23,10 +23,10 @@ export default function JoinUs() {
           initial={{y: -50, opacity: 0}}
           whileInView={{ y: 0, opacity: 1}}
           transition={{ duration: 1.0 }}
-          className={` ${merry.className} text-3xl md:text-4xl font-bold `}>
+          className={` ${merry.className} text-2xl md:text-3xl font-bold `}>
             Become a Certified Debt Recovery Specialist
           </motion.h2>
-          <p className="md:text-lg text-md text-gray-100">
+          <p className="md:text-md font-medium text-sm text-gray-100">
             Unlock a rewarding career in debt recovery. Our program is open to 
             everyone - no special background required, only the ability to read 
             and write with ease. With certificates endorsed by the{" "}

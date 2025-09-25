@@ -50,7 +50,7 @@ export default function Services() {
                     transition={{ duration: 1.2 }}
                     src={assets.handshake}
                     alt="handshake"
-        fill
+                    fill
                     className="object-contain z-10"
                 />
                 </div> 

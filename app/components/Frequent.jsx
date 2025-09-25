@@ -20,18 +20,18 @@ export default function Frequent() {
       id="FAQs"
       className="bg-white relative w-full min-h-screen flex items-center justify-center"
     >
-      <div className="grid grid-cols-1 md:grid-cols-2 p-6 gap-10 w-full max-w-6xl">
+      <div className="grid grid-cols-1 md:grid-cols-2 p-4 md:p-6 gap-10 w-full max-w-6xl">
         {/* Left */}
         <div className="space-y-8 max-w-xl flex flex-col justify-between">
           <motion.h1 
           initial={{ y: -100, opacity: 0}}
           whileInView={{ opacity: 1, y: 0}}
           transition={{ duration: 1.2 }}
-          className={` ${merry.className} text2xl md:text-3xl font-bold text-black tracking-wide`}>
+          className={` ${merry.className} text-2xl md:text-3xl font-bold text-black tracking-wide`}>
           <HelpCircle size={30}/>  Frequently Asked Questions 
           </motion.h1>
 
-          <div className="bg-gray-100 space-y-4 p-4 rounded-lg">
+          <div className="bg-gray-100 space-y-4 p-2 md:p-4 rounded-lg">
             <h3 className="font-semibold">Still have questions?</h3>
             <span className="text-gray-700 text-sm block">
               Can't find the answer to your question? Send us an email and we
@@ -53,7 +53,7 @@ export default function Frequent() {
             onClick={() => setOpenIndex(openIndex === i ? null : i)}
           >
             <div className="flex justify-between items-center">
-              <h2 className="font-medium text-gray-800">{faq.q}</h2>
+              <h2 className="md:font-medium text-gray-800 font-light text-sm">{faq.q}</h2>
               {openIndex === i ? (
                 <ChevronUp size={20} className="text-gray-600" />
               ) : (

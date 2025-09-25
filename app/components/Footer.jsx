@@ -1,10 +1,10 @@
 "use client";
 
-import { Mail, Phone, MapPin, Facebook, Twitter, Linkedin, FacebookIcon } from "lucide-react";
+import { Mail, Phone, MapPin, Facebook, Twitter, Linkedin } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="bg-gradient-to-r from-[#7A0C0C] via-[#8B1111] to-[#7A0C0C] text-white py-10">
+    <footer className="bg-gradient-to-r from-[#7A0C0C] via-[#8B1111] to-[#7A0C0C] text-white py-10 overflow-hidden">
   <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
     {/* Company Info */}
     <div>
@@ -29,9 +29,9 @@ export default function Footer() {
     <div>
       <h2 className="text-lg font-semibold mb-3">Follow Us</h2>
       <div className="flex gap-4">
-        <a href="#" className="hover:text-gray-300 transition"><FacebookIcon/></a>
-        <a href="#" className="hover:text-gray-300 transition"><Twitter/></a>
-        <a href="#" className="hover:text-gray-300 transition"><Linkedin/></a>
+        <a href="#" className="hover:text-gray-300 transition"><Facebook size={20}/></a>
+        <a href="#" className="hover:text-gray-300 transition"><Twitter size={20}/></a>
+        <a href="#" className="hover:text-gray-300 transition"><Linkedin size={20}/></a>
       </div>
     </div>
   </div>

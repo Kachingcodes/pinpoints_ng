@@ -53,7 +53,7 @@ export default function About() {
                     viewport={{ once: true }}
                     custom={0}
                     variants={aboutVariants}
-                    className={` ${merry.className} text-xl text-red-600 mb-4`}
+                    className={` ${merry.className} text-lg text-red-600 mb-4`}
                     >Get To Know Us</motion.h1>
 
                     <motion.p
@@ -62,7 +62,7 @@ export default function About() {
                     viewport={{ once: false }}
                     custom={1}
                     variants={aboutVariants}
-                    className="text-sm mb-4"
+                    className="text-md mb-4"
                     >At Pinpoints Nigeria, we specialize in debt management, private commercial investigations, 
                         credit search and verification, and alternative dispute resolution (ADR). 
                         With over **25 years of combined expertise**, our team is dedicated to helping businesses 
@@ -94,7 +94,7 @@ export default function About() {
                 {/*Why Choose Us Section*/}
                 <div className="flex flex-col gap-4 md:gap-6">
                     <div className="relative bg-gradient-to-r from-[#8f1616] via-[#851313] to-[#ba1717] flex justify-center p-2 rounded-lg">
-                        <div className="bg-white/10 backdrop-blur-lg border border-white/30 rounded-lg shadow-lg p-6 md:p-8 space-y-6 max-w-xl w-full">
+                        <div className="bg-white/10 backdrop-blur-lg border border-white/30 rounded-lg shadow-lg p-4 md:p-8 space-y-6 max-w-xl w-full">
                             <h1 className={`${merry.className} text-lg md:text-xl font-bold text-white`}>
                             WHY CHOOSE US?
                             </h1>
@@ -152,7 +152,7 @@ export default function About() {
                                         </div>
                                 </div>
 
-                                <button className="text-black hover:bg-red-600 hover:text-white py-3 rounded-lg bg-white w-full text-sm transition">
+                                <button className="text-red hover:bg-gray-200 py-3 rounded-lg bg-white w-full text-sm transition">
                                     Schedule A Consultation
                                 </button>
                             </div>
@@ -160,18 +160,18 @@ export default function About() {
                     </div>
 
                     <motion.div 
-                    initial={{x: 60, opacity: 0}}
+                    initial={{x: -60, opacity: 0}}
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.8 }} 
                     className="flex items-center justify-between gap-2">
                         <div className="border border-gray-400 p-4 md:p-8 px-6 md:px-12 items-center justify-center rounded-lg shadow shadow-gray-300">
                             <h3 className={` ${merry.className} text-lg md:text-xl text-red-600 text-center` }>Confidential</h3>
-                            <p className="text-gray-600 text-xs text-center">All communications protected</p>
+                            <p className="text-gray-600 text-sm font-light text-center">All communications protected</p>
                         </div>
 
                         <div className="border border-gray-400 p-4 md:p-8 px-6 md:px-12 items-center justify-center rounded-lg shadow shadow-gray-300">
                             <h3 className={` ${merry.className} text-lg md:text-xl text-red-600 text-center` }>Results</h3>
-                            <p className="text-gray-600 text-xs text-center">Success-driven approach</p>
+                            <p className="text-gray-600 text-sm text-center">Success-driven approach</p>
                         </div>
                     </motion.div>
                 </div>
