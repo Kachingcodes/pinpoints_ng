@@ -11,7 +11,23 @@ const merry = Merriweather({
   weight: ["500"]
 });
 
+
 export default function Hero() {
+
+  const learnMoreScroll = () => {
+  const element = document.getElementById("About Us");
+  if (element) {
+    const navbarHeight = 30;
+    const elementPosition = element.getBoundingClientRect().top + window.scrollY;
+    const offsetPosition = elementPosition - navbarHeight;
+
+    window.scrollTo({
+      top: offsetPosition,
+      behavior: "smooth",
+    });
+  }
+};
+
   return (
     <section id="Home"
     className="relative w-full min-h-screen py-20 bg-no-repeat bg-cover flex items-center justify-center overflow-hidden"
@@ -40,7 +56,8 @@ export default function Hero() {
             <button className="bg-red-700 hover:bg-[#f71818] text-white px-6 py-3 rounded-lg text-sm flex items-center justify-center gap-2">
              <Phone size={20}/> Book Consultation
             </button>
-            <button variant="outline" className="border border-red-700 text-white px-6 py-3 rounded-lg text-sm flex items-center justify-center gap-2">
+            <button onClick={learnMoreScroll}
+            variant="outline" className="border border-red-700 text-white px-6 py-3 rounded-lg text-sm flex items-center justify-center gap-2">
              <Book size={20}/> Learn More
             </button>
           </div>

@@ -20,8 +20,8 @@ export default function ListServices() {
               <div className="flex items-center justify-evenly gap-6">
                 <span className="bg-red-200 p-4 rounded-2xl text-red-600">{service.icon}</span>
                 <div className="gap-4">
-                  <h2 className="text-md md:text-xl">{service.header}</h2>
-                  <p className="text-gray-800 text-sm">{service.text}</p>
+                  <h2 className="text-lg md:text-xl">{service.header}</h2>
+                  <p className="text-gray-800 text-md">{service.text}</p>
                 </div>
               </div>
 
@@ -30,7 +30,7 @@ export default function ListServices() {
                   <div
                     key={i} className="flex items-center gap-2">
                       {item.icon}
-                        <span className="text-sm md:text-base text-gray-700">
+                        <span className="md:text-md text-gray-700">
                           {item.label}
                         </span>
                   </div>

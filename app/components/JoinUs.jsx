@@ -17,7 +17,7 @@ export default function JoinUs() {
     className="relative bg-gradient-to-br from-red-900/80 via-red-700/80 to-red-500/70 text-white py-16 px-4 md:px-12 overflow-hidden">
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
         
-        {/* Left: Intro */}
+        {/* Left */}
         <div className="space-y-6">
           <motion.h2 
           initial={{y: -50, opacity: 0}}
@@ -26,7 +26,7 @@ export default function JoinUs() {
           className={` ${merry.className} text-2xl md:text-3xl font-bold `}>
             Become a Certified Debt Recovery Specialist
           </motion.h2>
-          <p className="md:text-md font-medium text-sm text-gray-100">
+          <p className="text-md font-medium text-gray-100">
             Unlock a rewarding career in debt recovery. Our program is open to 
             everyone - no special background required, only the ability to read 
             and write with ease. With certificates endorsed by the{" "}
@@ -35,13 +35,12 @@ export default function JoinUs() {
             the credibility to succeed.
           </p>
 
-          {/* CTA */}
           <button className="mt-4 bg-white text-red-800 font-semibold py-3 px-6 rounded-lg shadow-md hover:bg-gray-100 transition">
             Register Today →
           </button>
         </div>
 
-        {/* Right: Benefits Grid */}
+        {/* Right: Benefits */}
         <motion.div 
         initial={{ x: 50, opacity: 0}}
         whileInView={{ x: 0, opacity: 1}}
@@ -50,7 +49,7 @@ export default function JoinUs() {
           <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-4 flex flex-col items-start gap-3 hover:shadow-md">
             <FileCheck2 size={28} className="text-white"/>
             <h3 className="font-semibold">Gov’t-Endorsed</h3>
-            <p className="text-sm text-gray-200">
+            <p className="text-md text-gray-200">
               Certificates backed by Education & Justice ministries.
             </p>
           </div>
@@ -58,7 +57,7 @@ export default function JoinUs() {
           <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-4 flex flex-col items-start gap-3">
             <Users size={28} className="text-white"/>
             <h3 className="font-semibold">Open to All</h3>
-            <p className="text-sm text-gray-200">
+            <p className="text-md text-gray-200">
               Anyone who can read and write can apply.
             </p>
           </div>
@@ -66,7 +65,7 @@ export default function JoinUs() {
           <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-4 flex flex-col items-start gap-3">
             <Handshake size={28} className="text-white"/>
             <h3 className="font-semibold">Work With Us</h3>
-            <p className="text-sm text-gray-200">
+            <p className="text-md text-gray-200">
               Join our trusted team after certification.
             </p>
           </div>
@@ -74,7 +73,7 @@ export default function JoinUs() {
           <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-4 flex flex-col items-start gap-3">
             <GraduationCap size={28} className="text-white"/>
             <h3 className="font-semibold">Practical Training</h3>
-            <p className="text-sm text-gray-200">
+            <p className="text-md text-gray-200">
               Hands-on, career-focused debt recovery skills.
             </p>
           </div>

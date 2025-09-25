@@ -33,7 +33,7 @@ export default function Services() {
                 className={` ${merry.className} text-2xl md:text-3xl`}>
                     OUR SERVICES
                 </h1>
-                <p className="max-w-xl text-gray-700 text-sm text-center">We provide specialized services across debt recovery, business consultancy, 
+                <p className="max-w-xl md:max-w-3xl text-gray-700 text-md text-center">We provide specialized services across debt recovery, business consultancy, 
                     and private investigation with unmatched expertise and discretion.</p>
             </motion.div>
 
