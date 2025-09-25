@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import { useState, useEffect } from "react";
-import { Menu, X, Phone, ChevronRight } from "lucide-react";
+import { Menu, X, Phone, ChevronRight, Facebook, Twitter, Linkedin } from "lucide-react";
 import { Link as ScrollLink } from "react-scroll";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -75,31 +75,43 @@ export default function Navbar() {
             exit={{ x: '100%' }}
             transition={{ duration: 0.4, ease: "easeInOut" }}
             className="md:hidden bg-white shadow-lg min-h-screen">
-          <div className="px-4 py-3 space-y-4">
-            {pinSections.map((section) => (
-                <ScrollLink
-                key={section}
-                to={section}
-                spy={true}
-                smooth={true}
-                offset={-100}
-                duration={500}
+          <div className="px-4 py-3 flex flex-col justify-between h-screen">
+            <div className="space-y-4">
+              {pinSections.map((section) => (
+                  <ScrollLink
+                  key={section}
+                  to={section}
+                  spy={true}
+                  smooth={true}
+                  offset={-100}
+                  duration={500}
+                  onClick={() => setIsOpen(false)}
+                  className="block text-gray-700 hover:text-red-900 text-sm cursor-pointer transition"
+                >
+                  <div className="flex w-full items-center justify-between px-2">
+                  {section} 
+                  <ChevronRight size={18}/>
+                  </div>
+                  </ScrollLink>
+              ))}
+              <Link
+                href="/contact"
+                className="px-4 py-3 text-sm gap-2 mt-6 flex items-center justify-center bg-red-900 text-white rounded-lg text-center hover:bg-red-700 transition"
                 onClick={() => setIsOpen(false)}
-                className="block text-gray-700 hover:text-red-900 text-sm cursor-pointer transition"
               >
-                <div className="flex w-full items-center justify-between px-2">
-                {section} 
-                <ChevronRight size={18}/>
+              <Phone size={20}/> Book Consultation
+              </Link>
+            </div>
+
+            {/* Social */}
+              <div className="fixed left-0 bottom-2 w-full">
+                <div className="flex items-center justify-evenly gap-4 text-sm">
+                  <a href="#" className="hover:text-gray-300 transition">Facebook</a>
+                  <a href="#" className="hover:text-gray-300 transition">Twitter</a>
+                  <a href="#" className="hover:text-gray-300 transition">Linkedin</a>
                 </div>
-                </ScrollLink>
-            ))}
-            <Link
-              href="/contact"
-              className="px-4 py-3 text-sm gap-2 mt-6 flex items-center justify-center bg-red-900 text-white rounded-lg text-center hover:bg-red-700 transition"
-              onClick={() => setIsOpen(false)}
-            >
-             <Phone size={20}/> Book Consultation
-            </Link>
+              </div>
+
           </div>
         </motion.div>
       )}
