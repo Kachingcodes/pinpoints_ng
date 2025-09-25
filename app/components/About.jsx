@@ -40,7 +40,7 @@ export default function About() {
                     ABOUT US
                 </h1>
 
-                <p className="max-w-xl md:max-w-3xl text-center text-gray-700 text-sm mb-6">We provide specialized services across debt recovery, business consultancy, 
+                <p className="max-w-xl md:max-w-3xl text-center text-gray-700 text-md mb-6">We provide specialized services across debt recovery, business consultancy, 
                     and private investigation with unmatched expertise and discretion.</p>
             </motion.div>
 
@@ -53,7 +53,7 @@ export default function About() {
                     viewport={{ once: true }}
                     custom={0}
                     variants={aboutVariants}
-                    className={` ${merry.className} text-lg text-red-600 mb-4`}
+                    className={` ${merry.className} text-xl md:text-2xl text-red-600 mb-4`}
                     >Get To Know Us</motion.h1>
 
                     <motion.p
@@ -74,7 +74,7 @@ export default function About() {
                     viewport={{ once: false }}
                     custom={2}
                     variants={aboutVariants}
-                    className="text-sm mb-4"
+                    className="text-md mb-4"
                     >We believe that trust is the foundation of every successful partnership. 
                         That’s why our clients choose us — not only for our proven results, but also for our 
                         commitment to confidentiality, fairness, and transparency in every case.  </motion.p>
@@ -85,7 +85,7 @@ export default function About() {
                     viewport={{ once: false }}
                     custom={3}
                     variants={aboutVariants}
-                    className="text-sm"
+                    className="text-md"
                     >Whether you’re facing overdue debts, require thorough financial background checks, 
                         or need a neutral partner in resolving disputes, Pinpoints Nigeria is your reliable ally for 
                         navigating complex financial matters.</motion.p>
@@ -95,7 +95,7 @@ export default function About() {
                 <div className="flex flex-col gap-4 md:gap-6">
                     <div className="relative bg-gradient-to-r from-[#8f1616] via-[#851313] to-[#ba1717] flex justify-center p-2 rounded-lg">
                         <div className="bg-white/10 backdrop-blur-lg border border-white/30 rounded-lg shadow-lg p-4 md:p-8 space-y-6 max-w-xl w-full">
-                            <h1 className={`${merry.className} text-lg md:text-xl font-bold text-white`}>
+                            <h1 className={`${merry.className} text-xl md:text-2xl font-bold text-white`}>
                             WHY CHOOSE US?
                             </h1>
 
@@ -105,8 +105,8 @@ export default function About() {
                                         <Shield size={20} />
                                     </div>
                                     <div className="space-y-1">
-                                        <h3 className="text-md font-semibold text-white">Trust & Integrity</h3>
-                                        <span className="text-sm text-gray-200">
+                                        <h3 className="text-lg md:text-lg font-semibold text-white">Trust & Integrity</h3>
+                                        <span className="text-md md:text-md text-gray-200">
                                             Fully licensed investigators and consultants with proper certifications 
                                             and insurance coverage.
                                         </span>

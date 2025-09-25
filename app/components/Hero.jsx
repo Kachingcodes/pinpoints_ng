@@ -24,7 +24,7 @@ export default function Hero() {
         
         {/* Left: Hero Text */}
         <div className="space-y-6">
-          <h1 className={` ${merry.className} text-4xl md:text-6xl font-bold text-red-600 leading-tight `}>
+          <h1 className={` ${merry.className} text-4xl md:text-6xl font-bold text-[#f71818] leading-tight `}>
             Trusted Experts in Debt Management & Commercial Investigations
           </h1>
           <motion.p 
@@ -37,10 +37,10 @@ export default function Hero() {
           </motion.p>
 
           <div className="flex gap-4 md:flex-row flex-col">
-            <button className="bg-red-900 hover:bg-red-700 text-white px-6 py-3 rounded-lg text-sm flex items-center justify-center gap-2">
+            <button className="bg-red-700 hover:bg-[#f71818] text-white px-6 py-3 rounded-lg text-sm flex items-center justify-center gap-2">
              <Phone size={20}/> Book Consultation
             </button>
-            <button variant="outline" className="border border-red-400 text-white px-6 py-3 rounded-lg text-sm flex items-center justify-center gap-2">
+            <button variant="outline" className="border border-red-700 text-white px-6 py-3 rounded-lg text-sm flex items-center justify-center gap-2">
              <Book size={20}/> Learn More
             </button>
           </div>
