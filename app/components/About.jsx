@@ -157,7 +157,7 @@ export default function About() {
                                 </div>
 
                                 <button className="text-red hover:bg-gray-200 py-3 rounded-lg bg-white w-full text-md transition">
-                                    Schedule A Consultation
+                                    Discuss Your Case
                                 </button>
                             </div>
                         </motion.div>

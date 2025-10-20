@@ -1,10 +1,10 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { Merriweather } from "next/font/google";
 import { faqs } from '@/public/assets';
 import { ChevronDown, ChevronUp, HelpCircle } from "lucide-react";
 import { motion } from 'framer-motion';
-
+import ContactModal from "./ContactModal";
 
 const merry = Merriweather({
   subsets: ["latin"],
@@ -14,6 +14,7 @@ const merry = Merriweather({
 
 export default function Frequent() {
   const [openIndex, setOpenIndex] = useState(null);
+  const [modalOpen, setModalOpen] = useState(false);
 
   return (
     <section
@@ -38,10 +39,14 @@ export default function Frequent() {
               will get back to you as soon as possible.
             </span>
 
-            <button className="px-4 py-2 text-white bg-red-700 rounded-md">
+            <button 
+            onClick={() => setModalOpen(true)}
+            className="px-4 py-2 text-white bg-red-700 rounded-md">
               Send email
             </button>
           </div>
+
+
         </div>
 
         {/* Right */}
@@ -68,6 +73,9 @@ export default function Frequent() {
           ))}
         </div>
       </div>
+
+      {/* Contact Modal */}
+      <ContactModal open={modalOpen} onOpenChange={setModalOpen} />
     </section>
   );
 }

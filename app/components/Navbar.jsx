@@ -1,5 +1,7 @@
 "use client";
 import Link from "next/link";
+import Image from "next/image";
+import { assets } from "@/public/assets";
 import { useState, useEffect } from "react";
 import { Menu, X, Phone, ChevronRight, Facebook, Twitter, Linkedin } from "lucide-react";
 import { Link as ScrollLink } from "react-scroll";
@@ -25,12 +27,22 @@ export default function Navbar() {
   return (
     <nav className="w-full bg-white shadow-md fixed top-0 left-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
+        <div className="flex items-center justify-between h-20">
           
           {/* Logo / Brand */}
-          <Link href="/" className="text-xl font-bold text-red-900">
-            Pinpoints Nigeria Ltd
-          </Link>
+          {/* <Link href="/" className="text-xl font-bold text-red-900">
+            
+          </Link> */}
+
+          {/* Logo */}
+        <Link href="/">
+          <Image
+            src={assets.logo}
+            alt="logo"
+            className="w-[48%] h-auto"
+          />
+          
+        </Link>
 
           {/* Desktop Menu */}
           <ul className="font-medium hidden md:flex space-x-6 items-center cursor-pointer">
@@ -48,12 +60,12 @@ export default function Navbar() {
                 </ScrollLink>
               </li>
             ))}
-            <Link
-              href="/contact"
+            <a
+              href="tel:+2348033517221"
               className="text-sm ml-4 px-4 py-2 flex gap-2 bg-red-700 hover:bg-[#f71818] text-white rounded-lg transition"
             >
              <Phone size={20}/> Speak to an Expert
-            </Link>
+            </a>
           </ul>
 
           {/* Mobile Menu Button */}
@@ -94,13 +106,13 @@ export default function Navbar() {
                   </div>
                   </ScrollLink>
               ))}
-              <Link
-                href="/contact"
+              <a
+                href="tel:+2348033517221"
                 className="px-4 py-3 text-sm gap-2 mt-6 flex items-center justify-center bg-red-900 text-white rounded-lg text-center hover:bg-red-700 transition"
-                onClick={() => setIsOpen(false)}
+                // onClick={() => setIsOpen(false)}
               >
-              <Phone size={20}/> Book Consultation
-              </Link>
+              <Phone size={20}/> Speak to an Expert
+              </a>
             </div>
 
             {/* Social */}

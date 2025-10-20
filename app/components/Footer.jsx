@@ -1,6 +1,7 @@
 "use client";
-
-import { Mail, Phone, MapPin, Facebook, Twitter, Linkedin } from "lucide-react";
+import Image from "next/image";
+import { assets } from "@/public/assets";
+import { Mail, Phone, MapPin, Facebook, Twitter, Linkedin, TargetIcon } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -8,6 +9,15 @@ export default function Footer() {
   <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
     {/* Company Info */}
     <div>
+        {/* Logo */}
+       
+          {/* <Image
+            src={assets.logo2}
+            alt="logo"
+            className="w-[30%] h-auto"
+          /> */}
+          {/* <TargetIcon size={18}/> */}
+   
       <h2 className="text-lg font-semibold mb-3">Pinpoints Nigeria</h2>
       <p className="text-sm text-gray-200">
         Trusted experts in Debt Recovery, Commercial Investigation, 
