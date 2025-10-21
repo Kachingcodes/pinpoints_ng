@@ -4,7 +4,7 @@ import { Merriweather } from "next/font/google";
 import { faqs } from '@/public/assets';
 import { ChevronDown, ChevronUp, HelpCircle } from "lucide-react";
 import { motion } from 'framer-motion';
-import ContactModal from "./ContactModal";
+// import ContactModal from "./ContactModal";
 
 const merry = Merriweather({
   subsets: ["latin"],
@@ -14,7 +14,7 @@ const merry = Merriweather({
 
 export default function Frequent() {
   const [openIndex, setOpenIndex] = useState(null);
-  const [modalOpen, setModalOpen] = useState(false);
+  // const [modalOpen, setModalOpen] = useState(false);
 
   return (
     <section
@@ -75,7 +75,7 @@ export default function Frequent() {
       </div>
 
       {/* Contact Modal */}
-      <ContactModal open={modalOpen} onOpenChange={setModalOpen} />
+      {/* <ContactModal open={modalOpen} onOpenChange={setModalOpen} /> */}
     </section>
   );
 }
