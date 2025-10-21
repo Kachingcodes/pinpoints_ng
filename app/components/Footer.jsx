@@ -29,9 +29,9 @@ export default function Footer() {
     <div>
       <h2 className="text-lg font-semibold mb-3">Contact Us</h2>
       <ul className="space-y-2 text-sm text-gray-200">
-        <li className="flex items-center gap-2">📧 info@pinpointsnigeria.com</li>
-        <li className="flex items-center gap-2">📞 +234 800 123 4567</li>
-        <li className="flex items-center gap-2">📍 12 Business Avenue, Lagos</li>
+        <li className="flex items-center gap-2">📧 aloziena@yahoo.co.uk</li>
+        <li className="flex items-center gap-2">📞 +2348033517221</li>
+        <li className="flex items-center gap-2">📍 13 Ezekiel Street, Ikeja, Lagos</li>
       </ul>
     </div>
 
