@@ -222,88 +222,88 @@ const prevStep = () => {
                 Step 1: Personal Information
                 </h2>
                 <div className="grid grid-cols-1 gap-4">
-                <input
-                    name="fullName"
-                    type="text"
-                    required
-                    placeholder="Full Name"
-                    className="border p-2 rounded-lg w-full"
-                    onChange={handleChange}
-                />
-
-                <input
-                    name="dob"
-                    type="date"
-                    required
-                    placeholder="Date of Birth"
-                    className={`border p-2 rounded-lg w-full ${
-                    errors.dob ? "border-red-500 focus:ring-red-500" : "border-gray-300 focus:ring-blue-500"
-                    }`}
-                    onChange={handleChange}
+                    <input
+                        name="fullName"
+                        type="text"
+                        required
+                        placeholder="Full Name"
+                        className="border p-2 rounded-lg w-full"
+                        onChange={handleChange}
                     />
-                    {errors.dob && (
-                    <p className="text-red-600 text-sm mt-1">{errors.dob}</p>
-                    )}
 
-                <select
-                    name="gender"
-                    required
-                    className="border p-2 rounded-lg w-full"
-                    onChange={handleChange}
-                >
-                    <option value="">Gender</option>
-                    <option>Male</option>
-                    <option>Female</option>
-                    <option>Prefer not to say</option>
-                </select>
+                    <input
+                        name="dob"
+                        type="date"
+                        required
+                        placeholder="Date of Birth"
+                        className={`border p-2 rounded-lg w-full ${
+                        errors.dob ? "border-red-500 focus:ring-red-500" : "border-gray-300 focus:ring-blue-500"
+                        }`}
+                        onChange={handleChange}
+                        />
+                        {errors.dob && (
+                        <p className="text-red-600 text-sm mt-1">{errors.dob}</p>
+                        )}
 
-                <input
-                    name="email"
-                    type="email"
-                    placeholder="Email Address"
-                    className={`border p-2 rounded-lg w-full ${
-                    errors.email ? "border-red-500 focus:ring-red-500" : "border-gray-300 focus:ring-blue-500"
-                    }`}
-                    onChange={handleChange}
-                    />
-                    {errors.email && (
-                    <p className="text-red-600 text-sm mt-1">{errors.email}</p>
-                    )}
-
-                <input
-                    name="phone"
-                    type="tel"
-                    required
-                    placeholder="Phone Number"
-                    className="border p-2 rounded-lg w-full"
-                    onChange={handleChange}
-                />
-
-                <select
-                    name="country"
-                    value={formData.country}
-                    onChange={handleChange}
-                    className="border rounded-lg p-2 w-full"
+                    <select
+                        name="gender"
+                        required
+                        className="border p-2 rounded-lg w-full"
+                        onChange={handleChange}
                     >
-                        <option value="">Select your country</option>
-                            {countries.map((country) => (
-                                <option key={country} value={country}>
-                                {country}
-                                </option>
-                            ))}
-                </select>
+                        <option value="">Gender</option>
+                        <option>Male</option>
+                        <option>Female</option>
+                        <option>Prefer not to say</option>
+                    </select>
 
-                <select
-                    name="contactMode"
-                    required
-                    className="border p-2 rounded-lg w-full"
-                    onChange={handleChange}
-                >
-                    <option value="">Preferred Mode of Contact</option>
-                    <option>Email</option>
-                    <option>Phone</option>
-                    <option>WhatsApp</option>
-                </select>
+                    <input
+                        name="email"
+                        type="email"
+                        placeholder="Email Address"
+                        className={`border p-2 rounded-lg w-full ${
+                        errors.email ? "border-red-500 focus:ring-red-500" : "border-gray-300 focus:ring-blue-500"
+                        }`}
+                        onChange={handleChange}
+                        />
+                        {errors.email && (
+                        <p className="text-red-600 text-sm mt-1">{errors.email}</p>
+                        )}
+
+                    <input
+                        name="phone"
+                        type="tel"
+                        required
+                        placeholder="Phone Number"
+                        className="border p-2 rounded-lg w-full"
+                        onChange={handleChange}
+                    />
+
+                    <select
+                        name="country"
+                        value={formData.country}
+                        onChange={handleChange}
+                        className="border rounded-lg p-2 w-full"
+                        >
+                            <option value="">Select your country</option>
+                                {countries.map((country) => (
+                                    <option key={country} value={country}>
+                                    {country}
+                                    </option>
+                                ))}
+                    </select>
+
+                    <select
+                        name="contactMode"
+                        required
+                        className="border p-2 rounded-lg w-full"
+                        onChange={handleChange}
+                    >
+                        <option value="">Preferred Mode of Contact</option>
+                        <option>Email</option>
+                        <option>Phone</option>
+                        <option>WhatsApp</option>
+                    </select>
                 </div>
             </>
             )}
@@ -318,25 +318,26 @@ const prevStep = () => {
                 <label className="block mb-2 font-semibold text-gray-700">
                 Can you read and write?*
                 </label>
+
                 <div className="flex gap-4 mb-4">
-                <label>
-                    <input
-                    type="radio"
-                    name="canReadWrite"
-                    value="Yes"
-                    onChange={handleChange}
-                    />{" "}
-                    Yes
-                </label>
-                <label>
-                    <input
-                    type="radio"
-                    name="canReadWrite"
-                    value="No"
-                    onChange={handleChange}
-                    />{" "}
-                    No
-                </label>
+                    <label>
+                        <input
+                        type="radio"
+                        name="canReadWrite"
+                        value="Yes"
+                        onChange={handleChange}
+                        />{" "}
+                        Yes
+                    </label>
+                    <label>
+                        <input
+                        type="radio"
+                        name="canReadWrite"
+                        value="No"
+                        onChange={handleChange}
+                        />{" "}
+                        No
+                    </label>
                 </div>
 
                 {formData.canReadWrite === "No" && (
@@ -351,44 +352,45 @@ const prevStep = () => {
                     Do you have a formal educational background?*
                     </label>
                     <div className="flex gap-4 mb-4">
-                    <label>
-                        <input
-                        type="radio"
-                        name="hasEducation"
-                        value="Yes"
-                        onChange={handleChange}
-                        />{" "}
-                        Yes
-                    </label>
-                    <label>
-                        <input
-                        type="radio"
-                        name="hasEducation"
-                        value="No"
-                        onChange={handleChange}
-                        />{" "}
-                        No
-                    </label>
+                        <label>
+                            <input
+                            type="radio"
+                            name="hasEducation"
+                            value="Yes"
+                            onChange={handleChange}
+                            />{" "}
+                            Yes
+                        </label>
+                        <label>
+                            <input
+                            type="radio"
+                            name="hasEducation"
+                            value="No"
+                            onChange={handleChange}
+                            />{" "}
+                            No
+                        </label>
                     </div>
 
                     {formData.hasEducation === "Yes" && (
                     <div className="grid grid-cols-1 gap-4 mt-4">
                         <select
-                        name="qualification"
-                        required
-                        className="border p-2 rounded-lg w-full"
-                        onChange={handleChange}
-                        >
-                        <option value="">Highest Qualification</option>
-                        <option>Primary</option>
-                        <option>Secondary</option>
-                        <option>Diploma</option>
-                        <option>BSc</option>
-                        <option>MSc</option>
-                        <option>MBA</option>
-                        <option>PhD</option>
-                        <option>Other</option>
+                            name="qualification"
+                            required
+                            className="border p-2 rounded-lg w-full"
+                            onChange={handleChange}
+                            >
+                            <option value="">Highest Qualification</option>
+                            <option>Primary</option>
+                            <option>Secondary</option>
+                            <option>Diploma</option>
+                            <option>BSc</option>
+                            <option>MSc</option>
+                            <option>MBA</option>
+                            <option>PhD</option>
+                            <option>Other</option>
                         </select>
+
                         <input
                         name="fieldOfStudy"
                         type="text"
@@ -447,8 +449,8 @@ const prevStep = () => {
                 <div className="flex gap-4 mb-4"> 
                     <label> <input type="radio" name="relevantExperience" value="Yes" onChange={handleChange} />{" "} Yes </label> 
                     <label> <input type="radio" name="relevantExperience" value="No" onChange={handleChange} />{" "} No </label> 
-                    </div> {formData.relevantExperience === "Yes" && ( 
-                        <textarea name="experienceDetails" 
+                </div> {formData.relevantExperience === "Yes" && ( 
+                    <textarea name="experienceDetails" 
                         placeholder="Briefly describe your relevant experience" 
                         className="border p-2 rounded-lg w-full" rows="3" 
                         onChange={handleChange} ></textarea> )} 
@@ -457,81 +459,79 @@ const prevStep = () => {
             {/* Step 4: Motivation & Goals */} 
             {step === 4 && ( 
                 <> 
-                <h2 className="text-xl font-bold mb-4 text-gray-800"> Step 4: Motivation & Goals </h2> 
-                <textarea name="motivation" 
-                placeholder="Why do you want to become a Debt Management Consultant/Expert?" 
-                className="border p-2 rounded-lg w-full" 
-                rows="3" 
-                onChange={handleChange} ></textarea> 
-                
-                <label className="block font-semibold text-gray-700 mb-2"> What do you hope to achieve from this program? </label> 
-                
-                <select name="goal" 
+                    <h2 className="text-xl font-bold mb-4 text-gray-800"> Step 4: Motivation & Goals </h2> 
+                    <textarea name="motivation" 
+                    placeholder="Why do you want to become a Debt Management Consultant/Expert?" 
+                    className="border p-2 rounded-lg w-full" 
+                    rows="3" 
+                    onChange={handleChange} ></textarea> 
+                    
+                    <label className="block font-semibold text-gray-700 mb-2"> What do you hope to achieve from this program? </label> 
+                    
+                    <select name="goal" 
+                        className="border p-2 rounded-lg w-full" 
+                        onChange={handleChange} > 
+                            <option value="">Select one</option> 
+                            <option>Career Change</option> 
+                            <option>Professional Upskilling</option> 
+                            <option>Business Expansion</option> 
+                            <option>Certification Requirement</option> 
+                            <option>Personal Interest</option> 
+                    </select> 
+                    
+                    <select name="applicationArea" 
                     className="border p-2 rounded-lg w-full" 
                     onChange={handleChange} > 
-                        <option value="">Select one</option> 
-                        <option>Career Change</option> 
-                        <option>Professional Upskilling</option> 
-                        <option>Business Expansion</option> 
-                        <option>Certification Requirement</option> 
-                        <option>Personal Interest</option> 
-                </select> 
-                
-                <select name="applicationArea" 
-                className="border p-2 rounded-lg w-full" 
-                onChange={handleChange} > 
-                    <option value="">Where do you intend to apply your knowledge?</option> 
-                    <option>Government</option> 
-                    <option>Private Sector</option> 
-                    <option>Financial Institution</option> 
-                    <option>Self-employed</option> 
-                    <option>NGO</option> 
-                    <option>Other</option> 
-                </select> 
+                        <option value="">Where do you intend to apply your knowledge?</option> 
+                        <option>Government</option> 
+                        <option>Private Sector</option> 
+                        <option>Financial Institution</option> 
+                        <option>Self-employed</option> 
+                        <option>NGO</option> 
+                        <option>Other</option> 
+                    </select> 
                 </> )} 
                 
             {/* Step 5: Training Preferences */} 
             {step === 5 && ( 
                 <> 
-                <h2 className="text-xl font-bold mb-4 text-gray-800"> Step 5: Training Preferences </h2> 
-                <select name="trainingFormat" 
-                className="border p-2 rounded-lg w-full" 
-                onChange={handleChange} > 
-                    <option value="">Preferred Training Format</option> 
-                    <option>Online (Live Classes)</option> 
-                    <option>Physical Classroom</option> 
-                    <option>Hybrid</option> 
-                </select> 
-                
-                <select name="preferredSchedule" 
-                className="border p-2 rounded-lg w-full" 
-                onChange={handleChange} > 
-                    <option value="">Preferred Schedule</option> 
-                    <option>Morning</option> 
-                    <option>Afternoon</option> 
-                    <option>Flexible</option> 
-                </select> 
-                
-                <select name="availability" 
-                className="border p-2 rounded-lg w-full" 
-                onChange={handleChange} > 
-                
-                    <option value="">Availability (When can you start?)</option> 
-                    <option>Immediately</option> 
-                    <option>Within 2 weeks</option> 
-                    <option>Within 1 month</option> 
-                    <option>Later this year</option> 
-                </select> 
-                
-                <div className="flex items-center gap-4 mt-4"> 
-                    <label className="font-semibold text-gray-700"> Interested in Certification after completion? </label> 
-                    <label> <input type="radio" name="certification" value="Yes" onChange={handleChange} />{" "} Yes </label> 
-                    <label> <input type="radio" name="certification" value="No" onChange={handleChange} />{" "} No </label> 
-                </div> 
+                    <h2 className="text-xl font-bold mb-4 text-gray-800"> Step 5: Training Preferences </h2> 
+                    <select name="trainingFormat" 
+                    className="border p-2 rounded-lg w-full" 
+                    onChange={handleChange} > 
+                        <option value="">Preferred Training Format</option> 
+                        <option>Online (Live Classes)</option> 
+                        <option>Physical Classroom</option> 
+                        <option>Hybrid</option> 
+                    </select> 
+                    
+                    <select name="preferredSchedule" 
+                    className="border p-2 rounded-lg w-full" 
+                    onChange={handleChange} > 
+                        <option value="">Preferred Schedule</option> 
+                        <option>Morning</option> 
+                        <option>Afternoon</option> 
+                        <option>Flexible</option> 
+                    </select> 
+                    
+                    <select name="availability" 
+                    className="border p-2 rounded-lg w-full" 
+                    onChange={handleChange} > 
+                    
+                        <option value="">Availability (When can you start?)</option> 
+                        <option>Immediately</option> 
+                        <option>Within 2 weeks</option> 
+                        <option>Within 1 month</option> 
+                        <option>Later this year</option> 
+                    </select> 
+                    
+                    <div className="flex items-center gap-4 mt-4"> 
+                        <label className="font-semibold text-gray-700"> Interested in Certification after completion? </label> 
+                        <label> <input type="radio" name="certification" value="Yes" onChange={handleChange} />{" "} Yes </label> 
+                        <label> <input type="radio" name="certification" value="No" onChange={handleChange} />{" "} No </label> 
+                    </div> 
                 </> )}
 
-            
-            
             {/* Step 6: Reference & Consent */} 
             {step === 6 && ( 
                 <> 

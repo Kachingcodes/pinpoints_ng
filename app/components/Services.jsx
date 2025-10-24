@@ -19,7 +19,7 @@ export default function Services() {
 
   return (
     <section id="Services"
-    className="relative w-full py-10 md:py-16 bg-white flex items-center justify-center overflow-hidden">
+    className="relative w-full py-6 md:py-10 bg-white flex items-center justify-center overflow-hidden">
 
         <div className="w-full flex flex-col p-2 gap-4">
             {/*Our Services Text*/}

@@ -2,9 +2,11 @@ import logo from './logo.png';
 // import logo2 from './logo2.png';
 import client from './client.png';
 import handshake from './handshake.png';
+import industry from './industry.png';
 import review from './review.png';
 import { Building, CheckCircle, Eye, Flashlight, FlashlightIcon, HandCoins, Handshake, Search, Truck } from "lucide-react";
 import { Landmark, Fuel, Utensils, School, Hotel, Hospital, User } from "lucide-react";
+import Industry from '@/app/components/Industry';
 
 
 export const assets = {
@@ -12,6 +14,7 @@ export const assets = {
   // logo2,
   client,
   handshake,
+  industry,
   review
 };
 
