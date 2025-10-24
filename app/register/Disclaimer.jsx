@@ -4,7 +4,7 @@ import React from "react"
 
 const Disclaimer = () => {
     return(
-        <div className="w-full bg-red-700 text-white p-8 shadow-md flex flex-col items-start space-y-3">
+        <div className="w-full bg-red-700 text-white p-4 md:p-8 shadow-md flex flex-col items-start space-y-3">
             <h2 className="text-xl font-semibold border-b border-white/50 pb-1">
                 Disclaimer
             </h2>

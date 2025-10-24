@@ -37,21 +37,39 @@ export default function Services() {
                     and private investigation with unmatched expertise and discretion.</p>
             </motion.div>
 
-            <div className="flex flex-col md:flex-row w-full p-2 items-center justify-between gap-6">
+            <div className="flex flex-col md:flex-row w-full p-4 items-center justify-between gap-6">
                 {/* Service */}
-                <div className="p-2 md:p-8 w-full md:w-1/2">
+                <div className="p-2 md:p-4 w-full md:w-1/2">
                 <ListServices/>
                 </div>
+{/* h-[40rem] */}
+                <div className="relative w-90 p-10 hidden md:flex flex-col items-center justify-center">
+                    <MotionImage
+                        initial={{ opacity: 0, scale: 0 }}
+                        whileInView={{ opacity: 1, scale: 1 }}
+                        transition={{ duration: 0.8, ease: "easeInOut" }}
+                        src={assets.review}
+                        alt="review"
+                        className="object-cover z-10"
+                    />
 
-                <div className="relative w-120 h-[60rem] hidden md:flex items-center justify-center">
-                <MotionImage
-                    initial={{ opacity: 0, scale: 0 }}
-                    whileInView={{ opacity: 1, scale: 1 }}
-                    transition={{ duration: 0.8, ease: "easeInOut" }}
-                    src={assets.handshake2}
-                    alt="handshake"
-                    className="object-cover z-10"
-                />
+                    <MotionImage
+                        initial={{ opacity: 0, scale: 0 }}
+                        whileInView={{ opacity: 1, scale: 1 }}
+                        transition={{ duration: 1.0, ease: "easeInOut" }}
+                        src={assets.client}
+                        alt="client"
+                        className="object-cover z-20 mr-36"
+                    />
+
+                    <MotionImage
+                        initial={{ opacity: 0, scale: 0 }}
+                        whileInView={{ opacity: 1, scale: 1 }}
+                        transition={{ duration: 0.8, ease: "easeInOut" }}
+                        src={assets.handshake}
+                        alt="handshake"
+                        className="object-cover z-10"
+                    />
                 </div>
 
             </div>

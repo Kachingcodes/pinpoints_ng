@@ -1,14 +1,18 @@
 import logo from './logo.png';
-import logo2 from './logo2.png';
-import handshake2 from './handshake2.jpg';
+// import logo2 from './logo2.png';
+import client from './client.png';
+import handshake from './handshake.png';
+import review from './review.png';
 import { Building, CheckCircle, Eye, Flashlight, FlashlightIcon, HandCoins, Handshake, Search, Truck } from "lucide-react";
 import { Landmark, Fuel, Utensils, School, Hotel, Hospital, User } from "lucide-react";
 
 
 export const assets = {
   logo,
-  logo2,
-    handshake2
+  // logo2,
+  client,
+  handshake,
+  review
 };
 
 

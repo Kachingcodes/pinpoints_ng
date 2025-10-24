@@ -89,10 +89,25 @@ export async function POST(req) {
     `;
 
     const data = await resend.emails.send({
-      from: "onboarding@resend.dev",
-      to: "delivered@resend.dev", // replace with your actual receiver email
+      from: "Pinpoints Nigeria Limited <noreply@pinpointsng.com>",
+      to: "aloziena@yahoo.co.uk", // replace with your actual receiver email
       subject: `New Consultant Application – ${fullName}`,
+      // reply_to: email,
       html: htmlContent,
+    });
+
+    // Send confirmation email to USER
+    const userEmail = await resend.emails.send({
+      from: "Pinpoints <noreply@pinpointsng.com>",
+      to: email,
+      subject: "Your Application Has Been Received",
+      html: `
+        <h2>Hello ${fullName},</h2>
+        <p>Thank you for your interest in the <strong>Debt Management Consultant Training Programme</strong>.</p>
+        <p>We have received your application successfully and our team will review your submission shortly.</p>
+        <p>For any inquiries, please contact us at <a href="mailto:info@pinpointsng.com">info@pinpointsng.com</a>.</p>
+        <p>Best regards,<br><strong>The Pinpoints Team</strong></p>
+      `,
     });
 
     console.log("✅ Email sent successfully:", data);

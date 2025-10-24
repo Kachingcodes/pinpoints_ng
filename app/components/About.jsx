@@ -106,7 +106,7 @@ export default function About() {
                             <div className="space-y-6">
                                 <div className="flex gap-4">
                                     <div className="text-white">
-                                        <Shield size={20} />
+                                        <Shield size={20} className="mt-1"/>
                                     </div>
                                     <div className="space-y-1">
                                         <h3 className="text-lg md:text-xl font-semibold text-white">Trust & Integrity</h3>
@@ -119,7 +119,7 @@ export default function About() {
 
                                 <div className="flex gap-4">
                                     <div className="text-white">
-                                        <Award size={20}/>
+                                        <Award size={20} className="mt-1"/>
                                     </div>
                                     <div className="space-y-1">
                                         <h3 className="text-lg md:text-xl font-semibold text-white">Proven Track Record</h3>
@@ -132,7 +132,7 @@ export default function About() {
 
                                 <div className="flex gap-4">
                                     <div className="text-white">
-                                        <Lock size={20}/>
+                                        <Lock size={20} className="mt-1"/>
                                     </div>
                                     <div className="space-y-1">
                                         <h3 className="text-lg md:text-xl font-semibold text-white">Confidential & Discreet Services</h3>
@@ -145,7 +145,7 @@ export default function About() {
 
                                 <div className="flex gap-4">
                                     <div className="text-white">
-                                        <User size={20}/>
+                                        <User size={20} className="mt-1"/>
                                     </div>
                                         <div className="space-y-1">
                                             <h3 className="text-lg md:text-xl font-semibold text-white">Client-Centered Approach</h3>
