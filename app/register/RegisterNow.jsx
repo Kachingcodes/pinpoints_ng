@@ -199,13 +199,13 @@ const prevStep = () => {
   };
 
   return (
-    <section className="relative w-full min-h-screen bg-no-repeat bg-cover flex items-center justify-center overflow-hidden"
+    <section className="relative w-full min-h-screen bg-no-repeat bg-cover flex items-center justify-center overflow-hidden z-20"
     style={{ backgroundImage: "url('/peers.png')" }}>
 
         {/* Dark overlay */}
         <div className="absolute inset-0 bg-black/10"></div>
 
-        <div className="max-w-2xl mx-auto bg-white shadow-lg rounded-2xl md:p-2 p-8 mt-8 mb-12">
+        <div className="max-w-2xl mx-auto bg-white shadow-lg rounded-2xl p-6 md:p-8 mt-8 mb-12 z-10">
         {/* Progress Bar */}
         <div className="w-full bg-gray-200 rounded-full h-3 mb-8">
             <div
