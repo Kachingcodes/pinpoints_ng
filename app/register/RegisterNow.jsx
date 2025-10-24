@@ -235,6 +235,7 @@ const prevStep = () => {
                     name="dob"
                     type="date"
                     required
+                    placeholder="Date of Birth"
                     className={`border p-2 rounded-lg w-full ${
                     errors.dob ? "border-red-500 focus:ring-red-500" : "border-gray-300 focus:ring-blue-500"
                     }`}
