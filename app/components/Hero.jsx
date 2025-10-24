@@ -39,7 +39,7 @@ export default function Hero() {
       <div className="max-w-7xl mx-auto px-6 lg:px-12 grid grid-cols-1 md:grid-cols-2 gap-8 items-center z-10">
         
         {/* Left: Hero Text */}
-        <div className="space-y-6">
+        <div className="space-y-6 mt-4">
           <h1 className={` ${merry.className} text-4xl md:text-6xl font-bold text-[#f71818] leading-tight `}>
             Trusted Experts in Debt Management & Commercial Investigations
           </h1>

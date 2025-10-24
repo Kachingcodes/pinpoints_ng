@@ -3,6 +3,9 @@ import React from "react";
 import { Merriweather } from "next/font/google";
 import { FileCheck2, Users, Handshake, GraduationCap } from "lucide-react";
 import { motion } from 'framer-motion';
+import Link from 'next/link';
+
+
 
 const merry = Merriweather({
   subsets: ["latin"],
@@ -40,9 +43,9 @@ export default function JoinUs() {
             the credibility to succeed.
           </motion.p>
 
-          <button className="mt-4 bg-white text-red-800 font-semibold py-3 px-6 rounded-lg shadow-md hover:bg-gray-100 transition">
+          <Link href="/register" className="mt-4 bg-white text-red-800 font-semibold py-3 px-6 rounded-lg shadow-md hover:bg-gray-100 transition">
             Register Today →
-          </button>
+          </Link>
         </div>
 
         {/* Right: Benefits */}
