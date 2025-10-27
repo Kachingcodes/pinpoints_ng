@@ -34,7 +34,7 @@ export async function POST(req) {
       to: email,
       subject: "Your Application Has Been Received",
       html: `
-        <h2>Hello ${fullName},</h2>
+        <h2>Hello ${name},</h2>
         <p>Thank you for your interest in the <strong>Debt Management Consultant Training Programme</strong>.</p>
         <p>We have received your application successfully and our team will review your submission shortly.</p>
         <p>For any inquiries, please contact us at <a href="mailto:info@pinpointsng.com">info@pinpointsng.com</a>.</p>

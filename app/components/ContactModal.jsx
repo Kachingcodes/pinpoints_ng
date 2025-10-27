@@ -59,7 +59,7 @@ useEffect(() => {
           inquiry: "",
         });
       } else {
-        setStatus("Something went wrong. Please try again.");
+        setStatus(data.message || "Something went wrong. Please try again.");
       }
     } catch (err) {
       console.error(err);
