@@ -1,9 +1,10 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import { Shield, Users, FileText, Book, Calendar, ArrowRight, Layers } from "lucide-react";
 import { Merriweather } from "next/font/google";
 import { motion } from 'framer-motion';
 import { stats } from '@/public/assets';
+import BookModal from "./BookModal";
 
 
 const merry = Merriweather({
@@ -13,7 +14,8 @@ const merry = Merriweather({
 
 
 export default function Hero() {
-
+  const [modalOpen, setModalOpen] = useState(false);
+  
   const learnMoreScroll = () => {
   const element = document.getElementById("Services");
   if (element) {
@@ -53,7 +55,9 @@ export default function Hero() {
           </motion.p>
 
           <div className="flex gap-4 md:flex-row flex-col">
-            <button className="bg-red-700 hover:bg-[#f71818] text-white px-6 py-3 rounded-lg text-sm flex items-center justify-center gap-2">
+            <button 
+            onClick={() => setModalOpen(true)}
+            className="bg-red-700 hover:bg-[#f71818] text-white px-6 py-3 rounded-lg text-sm flex items-center justify-center gap-2">
              <Calendar size={20}/> Book Consultation
             </button>
             <button onClick={learnMoreScroll}
@@ -96,6 +100,10 @@ export default function Hero() {
           ))}
         </div>
       </div>
+
+
+      {/* Book Consultation Modal */}
+      <BookModal open={modalOpen} onOpenChange={setModalOpen} />
     </section>
   );
 }

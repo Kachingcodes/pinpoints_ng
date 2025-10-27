@@ -15,7 +15,7 @@ export async function POST(req) {
 
     const data = await resend.emails.send({
       from: "Pinpoints Nigeria Limited <noreply@pinpointsng.com>", 
-      to: "aloziena@yahoo.co.uk",  // where you want to receive messages
+      to: "lynnradney4@gmail.com",  //aloziena@yahoo.co.uk where you want to receive messages
       subject: `New Inquiry from ${name || "Unknown"}`,
       // reply_to: email,
       html: `

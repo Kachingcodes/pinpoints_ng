@@ -11,14 +11,14 @@ const merry = Merriweather({
   weight: ["500"]
 });
 
-const aboutVariants = {
-  hidden: { opacity: 0, x: 50 },
-  visible: (i) => ({
-    opacity: 1,
-    x: 0,
-    transition: { delay: i * 0.2, duration: 0.8, ease: "easeOut" },
-  }),
-};
+// const aboutVariants = {
+//   hidden: { opacity: 0, x: 50 },
+//   visible: (i) => ({
+//     opacity: 1,
+//     x: 0,
+//     transition: { delay: i * 0.2, duration: 0.8, ease: "easeOut" },
+//   }),
+// };
 
 export default function About() {
     const MotionImage = motion(Image);
@@ -45,50 +45,27 @@ export default function About() {
             </motion.div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 p-0 md:p-6">
+
                 {/*About Us Section*/}
                 <div className="relative max-w-3xl mx-auto py-4 mt-6 px-2">
-                    <motion.h1                
-                    initial="hidden"
-                    whileInView="visible"
-                    viewport={{ once: true }}
-                    custom={0}
-                    variants={aboutVariants}
-                    className={` ${merry.className} text-xl md:text-2xl text-red-600 mb-4`}
-                    >Get To Know Us</motion.h1>
+                    <h1 className={` ${merry.className} text-xl md:text-2xl text-red-600 mb-4`}
+                    >Get To Know Us</h1>
 
-                    <motion.p
-                    initial="hidden"
-                    whileInView="visible"
-                    viewport={{ once: false }}
-                    custom={1}
-                    variants={aboutVariants}
-                    className="text-md mb-4"
+                    <p className="text-md mb-4"
                     >At Pinpoints Nigeria, we specialize in debt management, private commercial investigations, 
                         credit search and verification, and alternative dispute resolution (ADR). 
                         With over **25 years of combined expertise**, our team is dedicated to helping businesses 
-                        and individuals regain financial stability with professionalism and discretion.</motion.p>
+                        and individuals regain financial stability with professionalism and discretion.</p>
 
-                    <motion.p
-                    initial="hidden"
-                    whileInView="visible"
-                    viewport={{ once: false }}
-                    custom={2}
-                    variants={aboutVariants}
-                    className="text-md mb-4"
+                    <p className="text-md mb-4"
                     >We believe that trust is the foundation of every successful partnership. 
                         That’s why our clients choose us — not only for our proven results, but also for our 
-                        commitment to confidentiality, fairness, and transparency in every case.  </motion.p>
+                        commitment to confidentiality, fairness, and transparency in every case.  </p>
                     
-                    <motion.p
-                    initial="hidden"
-                    whileInView="visible"
-                    viewport={{ once: false }}
-                    custom={3}
-                    variants={aboutVariants}
-                    className="text-md"
+                    <p className="text-md"
                     >Whether you’re facing overdue debts, require thorough financial background checks, 
                         or need a neutral partner in resolving disputes, Pinpoints Nigeria is your reliable ally for 
-                        navigating complex financial matters.</motion.p>
+                        navigating complex financial matters.</p>
                 </div>
 
                 {/*Why Choose Us Section*/}

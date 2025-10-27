@@ -19,20 +19,22 @@ export default function Industry() {
     <section id="Industries"
       className="bg-white relative w-full py-4 flex items-center justify-center">
         
-        <div className="space-y-6 flex items-center justify-center flex-col">
-          <h1 className={` ${merry.className} text-3xl font-bold text-black tracking-wide text-center`}>
-            Doesn't Matter The Industry
-          </h1>
+        <div className="space-y-6">
+          <div className="flex items-center justify-evenly">
+            <h1 className={` ${merry.className} text-4xl font-bold text-black tracking-wide`}>
+              Doesn't Matter The Industry
+            </h1>
 
-          <div className="relative w-90 p-6 hidden md:flex items-center justify-center bg-red-100 rounded-2xl">
-            <MotionImage
-              initial={{ opacity: 0, scale: 0 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 1.0, ease: "easeInOut" }}
-              src={assets.industry}
-              alt="industry"
-              className="object-cover"
-            />
+            <div className="relative w-90 p-6 hidden md:flex items-center justify-center bg-red-100 rounded-2xl">
+              <MotionImage
+                initial={{ opacity: 0, scale: 0 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 1.0, ease: "easeInOut" }}
+                src={assets.industry}
+                alt="industry"
+                className="object-cover"
+              />
+            </div>
           </div>
           
           <div className="flex flex-wrap justify-center text-center gap-6 text-sm text-gray-700 py-12 md:px-6">
