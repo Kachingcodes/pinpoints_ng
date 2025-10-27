@@ -30,7 +30,7 @@ export async function POST(req) {
     const userEmail = await resend.emails.send({
       from: "Pinpoints <noreply@pinpointsng.com>",
       to: email,
-      subject: "Your Application Has Been Received",
+      subject: "Thank You for Reaching Out",
       html: `
         <h2>Hello ${name},</h2>
         <p>Thank you for contacting us! We’ve received your inquiry and our team will get back to you shortly.</p>
