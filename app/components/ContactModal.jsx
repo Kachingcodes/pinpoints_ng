@@ -183,7 +183,7 @@ useEffect(() => {
                 type="submit"
                 disabled={loading}
                 onClick={handleSubmit}
-                className="w-full flex mt-2 bg-red-600 hover:bg-red-700 transition text-white font-medium py-2 rounded-md"
+                className="w-full flex items-center justify-center mt-2 bg-red-600 hover:bg-red-700 transition text-white font-medium py-2 rounded-md"
               >
                 {loading ? (
                   <>
