@@ -4,6 +4,9 @@ import client from './client.png';
 import handshake from './handshake.png';
 import industry from './industry.png';
 import review from './review.png';
+import ada from './ada.jpg';
+import ebun from './ebun.jpg';
+import emeka from './emeka.jpg';
 import { Building, CheckCircle, Eye, Flashlight, FlashlightIcon, HandCoins, Handshake, Search, Truck } from "lucide-react";
 import { Landmark, Fuel, Utensils, School, Hotel, Hospital, User } from "lucide-react";
 import Industry from '@/app/components/Industry';
@@ -12,6 +15,9 @@ import Industry from '@/app/components/Industry';
 export const assets = {
   logo,
   // logo2,
+  ada,
+  ebun,
+  emeka,
   client,
   handshake,
   industry,

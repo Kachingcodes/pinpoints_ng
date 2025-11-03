@@ -19,7 +19,7 @@ export default function Services() {
 
   return (
     <section id="Services"
-    className="relative w-full py-6 md:py-10 bg-white flex items-center justify-center overflow-hidden">
+    className="relative w-full py-6 md:py-8 bg-white flex items-center justify-center overflow-hidden">
 
         <div className="w-full flex flex-col p-2 gap-4">
             {/*Our Services Text*/}
@@ -33,8 +33,9 @@ export default function Services() {
                 className={` ${merry.className} text-2xl md:text-3xl`}>
                     OUR SERVICES
                 </h1>
-                <p className="max-w-xl md:max-w-3xl text-gray-700 text-md text-center">We provide specialized services across debt recovery, business consultancy, 
-                    and private investigation with unmatched expertise and discretion.</p>
+                <p className="max-w-xl md:max-w-3xl text-gray-700 text-md text-center">From strategic debt recovery to corporate advisory, 
+                    our services are designed to strengthen your financial systems and secure long-term growth.
+                </p>
             </motion.div>
 
             <div className="flex flex-col md:flex-row w-full p-4 items-center justify-between gap-6">

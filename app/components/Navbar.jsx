@@ -9,6 +9,16 @@ import { motion, AnimatePresence } from "framer-motion";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [copied, setCopied] = useState(false);
+
+  const handleCopy = () => {
+    const phoneNumber = "+2348033517221";
+    navigator.clipboard.writeText(phoneNumber);
+    setCopied(true);
+
+    // Reset notification after 2 seconds
+    setTimeout(() => setCopied(false), 2000);
+  };
 
   const pinSections = ['Home', 'About Us', 'Services', 'Industries', 'Join Us', 'FAQs'];
 
@@ -29,11 +39,6 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           
-          {/* Logo / Brand */}
-          {/* <Link href="/" className="text-xl font-bold text-red-900">
-            
-          </Link> */}
-
           {/* Logo */}
         <Link href="/">
           <Image
@@ -41,7 +46,6 @@ export default function Navbar() {
             alt="logo"
             className="w-[48%] h-auto"
           />
-          
         </Link>
 
           {/* Desktop Menu */}
@@ -60,12 +64,19 @@ export default function Navbar() {
                 </ScrollLink>
               </li>
             ))}
-            <a
-              href="tel:+2348033517221"
-              className="text-sm ml-4 px-4 py-2 flex gap-2 bg-red-700 hover:bg-[#f71818] text-white rounded-lg transition"
-            >
-             <Phone size={20}/> Speak to an Expert
-            </a>
+              
+              <div className="relative inline-block">              
+                <button 
+                onClick={handleCopy}
+                className="text-sm ml-4 px-4 py-2 flex gap-2 bg-red-700 hover:bg-[#f71818] text-white rounded-lg transition">
+                  <Phone size={20}/> Speak to an Expert
+                </button>
+                {copied && (
+                  <span className="absolute -bottom-6 right-4 bg-gray-800 text-white text-xs px-3 py-1 rounded-md shadow-lg">
+                    Phone Number Copied!
+                  </span>
+                )}
+              </div>
           </ul>
 
           {/* Mobile Menu Button */}

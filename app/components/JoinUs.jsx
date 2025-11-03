@@ -43,7 +43,7 @@ export default function JoinUs() {
             the credibility to succeed.
           </motion.p>
 
-          <Link href="/register" className="mt-4 bg-white text-red-800 font-semibold py-3 px-6 rounded-lg shadow-md hover:bg-gray-100 transition">
+          <Link href="/register" className="mt-4 bg-white text-red-800 font-semibold py-3 px-6 rounded-lg shadow-md hover:bg-gray-200 transition">
             Register Today →
           </Link>
         </div>

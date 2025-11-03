@@ -19,7 +19,7 @@ export default function Hero() {
   const learnMoreScroll = () => {
   const element = document.getElementById("Services");
   if (element) {
-    const navbarHeight = 10;
+    const navbarHeight = 30;
     const elementPosition = element.getBoundingClientRect().top + window.scrollY;
     const offsetPosition = elementPosition - navbarHeight;
 

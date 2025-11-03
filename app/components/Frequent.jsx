@@ -45,8 +45,6 @@ export default function Frequent() {
               Send email
             </button>
           </div>
-
-
         </div>
 
         {/* Right */}

@@ -2,6 +2,7 @@
 import { Award, Lock, Shield, User, Building } from "lucide-react";
 import React from "react";
 import Image from "next/image";
+import { assets } from "@/public/assets";
 import { motion } from 'framer-motion';
 import { Merriweather } from "next/font/google";
 
@@ -11,17 +12,9 @@ const merry = Merriweather({
   weight: ["500"]
 });
 
-// const aboutVariants = {
-//   hidden: { opacity: 0, x: 50 },
-//   visible: (i) => ({
-//     opacity: 1,
-//     x: 0,
-//     transition: { delay: i * 0.2, duration: 0.8, ease: "easeOut" },
-//   }),
-// };
 
 export default function About() {
-    const MotionImage = motion(Image);
+    // const MotionImage = motion(Image);
 
   return (
     <section id="About Us"
@@ -40,32 +33,60 @@ export default function About() {
                     ABOUT US
                 </h1>
 
-                <p className="max-w-xl md:max-w-3xl text-center text-gray-700 text-md mb-6">We provide specialized services across debt recovery, business consultancy, 
-                    and private investigation with unmatched expertise and discretion.</p>
+                <p className="max-w-xl md:max-w-3xl text-center text-gray-700 text-md mb-6">At Pinpoints Nigeria Ltd, 
+                    we specialize in precision-driven debt recovery and client relationship management, built on trust, 
+                    integrity, and measurable success.</p>
             </motion.div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 p-0 md:p-6">
 
                 {/*About Us Section*/}
-                <div className="relative max-w-3xl mx-auto py-4 mt-6 px-2">
-                    <h1 className={` ${merry.className} text-xl md:text-2xl text-red-600 mb-4`}
-                    >Get To Know Us</h1>
+                <div className="flex flex-col justify-between px-2 mt-6">
+                    <div className="relative max-w-3xl mx-auto">
+                        <h1 className={` ${merry.className} text-xl md:text-2xl text-red-600 mb-4`}
+                        >Get To Know Us</h1>
 
-                    <p className="text-md mb-4"
-                    >At Pinpoints Nigeria, we specialize in debt management, private commercial investigations, 
-                        credit search and verification, and alternative dispute resolution (ADR). 
-                        With over **25 years of combined expertise**, our team is dedicated to helping businesses 
-                        and individuals regain financial stability with professionalism and discretion.</p>
+                        <p className="text-md mb-4"
+                        >At Pinpoints Nigeria, we specialize in debt management, private commercial investigations, 
+                            credit search and verification, and alternative dispute resolution (ADR). 
+                            With over **25 years of combined expertise**, our team is dedicated to helping businesses 
+                            and individuals regain financial stability with professionalism and discretion.</p>
 
-                    <p className="text-md mb-4"
-                    >We believe that trust is the foundation of every successful partnership. 
-                        That’s why our clients choose us — not only for our proven results, but also for our 
-                        commitment to confidentiality, fairness, and transparency in every case.  </p>
-                    
-                    <p className="text-md"
-                    >Whether you’re facing overdue debts, require thorough financial background checks, 
-                        or need a neutral partner in resolving disputes, Pinpoints Nigeria is your reliable ally for 
-                        navigating complex financial matters.</p>
+                        <p className="text-md mb-4"
+                        >We believe that trust is the foundation of every successful partnership. 
+                            That’s why our clients choose us — not only for our proven results, but also for our 
+                            commitment to confidentiality, fairness, and transparency in every case.  </p>
+                        
+                        <p className="text-md"
+                        >Whether you’re facing overdue debts, require thorough financial background checks, 
+                            or need a neutral partner in resolving disputes, Pinpoints Nigeria is your reliable ally for 
+                            navigating complex financial matters.</p>
+                    </div>
+
+                    <div className="flex flex-col gap-1">
+                        <h1 className={` ${merry.className} text-xl md:text-2xl text-red-600 mb-4`}
+                        >Our Team</h1>
+
+                        <div className="grid grid-cols-3 gap-4">
+                            <div className="border border-[#000000]/27 p-2 md:p-4 px-2 md:px-4 items-center justify-center rounded-lg">
+                                <Image src={assets.ada} alt="ada" className="rounded-lg"/>
+                                <h3 className={` ${merry.className} text-md text-red-600 text-center mt-2`}>Name: Mr. Alozie R. Nsirimobi</h3>
+                                <p className="text-gray-600 text-sm font-light text-center">Role: CEO </p>
+                            </div>
+
+                            <div className="border border-[#000000]/27 p-2 md:p-4 px-2 md:px-4 items-center justify-center rounded-lg">
+                                <Image src={assets.ebun} alt="ebun" className="rounded-lg"/> 
+                                <h3 className={` ${merry.className} text-md text-red-600 text-center mt-2`}>Name: Mr. King</h3>
+                                <p className="text-gray-600 text-sm font-light text-center">Role: All communications protected</p>
+                            </div>
+
+                            <div className="border border-[#000000]/27 p-2 md:p-4 px-2 md:px-4 items-center justify-center rounded-lg">
+                                <Image src={assets.emeka} alt="emeka" className="rounded-lg"/>
+                                <h3 className={` ${merry.className} text-md text-red-600 text-center mt-2`}>Name: Confidential</h3>
+                                <p className="text-gray-600 text-sm font-light text-center">Role: All communications protected</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 {/*Why Choose Us Section*/}
@@ -145,12 +166,12 @@ export default function About() {
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.8 }} 
                     className="flex items-center justify-between gap-2">
-                        <div className="border border-gray-400 p-4 md:p-8 px-6 md:px-12 items-center justify-center rounded-lg shadow shadow-gray-300">
+                        <div className="border border-[#000000]/27 p-4 md:p-8 px-6 md:px-12 items-center justify-center rounded-lg">
                             <h3 className={` ${merry.className} text-lg md:text-xl text-red-600 text-center` }>Confidential</h3>
                             <p className="text-gray-600 text-sm font-light text-center">All communications protected</p>
                         </div>
 
-                        <div className="border border-gray-400 p-4 md:p-8 px-6 md:px-12 items-center justify-center rounded-lg shadow shadow-gray-300">
+                        <div className="border border-[#000000]/27 p-4 md:p-8 px-6 md:px-12 items-center justify-center rounded-lg">
                             <h3 className={` ${merry.className} text-lg md:text-xl text-red-600 text-center` }>Results</h3>
                             <p className="text-gray-700 text-sm text-center">Success-driven approach</p>
                         </div>
